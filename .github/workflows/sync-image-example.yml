@@ -1,4 +1,4 @@
-name: Sync Image to Aliyun  Example
+name: Sync Image to Aliyun
 on:
   push:
     branches: [ "main" ]
@@ -22,5 +22,5 @@ jobs:
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/userxy2015/ngnix:latest docker://registry.cn-guangzhou.aliyuncs.com/lviwenbo/lviwenbo/ngnix:latest
-         skopeo copy docker://docker.io/userxy2015/redis:latest docker://registry.cn-guangzhou.aliyuncs.com/lviwenbo/lviwenbo/redis:latest
+         skopeo copy docker://docker.io/ngnix:latest docker://registry.cn-guangzhou.aliyuncs.com/lviwenbo/lviwenbo/ngnix:latest
+         skopeo copy docker://docker.io/redis:latest docker://registry.cn-guangzhou.aliyuncs.com/lviwenbo/lviwenbo/redis:latest
